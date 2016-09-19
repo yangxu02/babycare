@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    >
+
+  <TextView
+      style="@style/ColText.time.first"
+      android:id="@+id/record_time"
+      />
+  <TextView
+      style="@style/ColText.value"
+      android:id="@+id/value"
+      android:layout_toEndOf="@+id/record_time"
+      />
+  <ImageView
+      style="@style/ColText.iconSmall"
+      android:id="@+id/rating"
+      android:src="@drawable/ic_action_emo_basic"
+      android:layout_toEndOf="@+id/value"
+      />
+  <ImageView
+      style="@style/ColText.iconSmall.last"
+      android:id="@+id/delete"
+      android:src="@drawable/ic_action_trash"
+      android:layout_alignParentEnd="true"
+      />
+
+</RelativeLayout>

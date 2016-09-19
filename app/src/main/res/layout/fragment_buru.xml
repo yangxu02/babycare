@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:linkx="http://schemas.android.com/apk/res-auto"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginTop="@dimen/spacing_small"
+    >
+
+  <android.support.v4.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <android.support.v7.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/spacing_medium"
+          android:layout_marginLeft="@dimen/spacing_medium"
+          android:layout_marginRight="@dimen/spacing_medium">
+
+        <LinearLayout
+            style="@style/Widget.CardContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+          <com.linkx.babycare.view.components.SegmentHeaderView
+              android:id="@+id/buru_header"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_marginBottom="@dimen/spacing_medium"
+              android:background="@color/blue"
+              />
+
+
+          <com.linkx.babycare.view.components.BuruDetailView
+              android:id="@+id/buru_left"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              linkx:tag="左"
+              />
+
+          <com.linkx.babycare.view.components.BuruDetailView
+              android:id="@+id/buru_right"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              linkx:tag="右"
+              />
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_marginBottom="@dimen/spacing_medium"
+              android:background="@color/lime"
+              />
+
+          <LinearLayout
+              android:orientation="vertical"
+              android:id="@+id/buru_data"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+          </LinearLayout>
+
+        </LinearLayout>
+      </android.support.v7.widget.CardView>
+
+      <android.support.v7.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/spacing_medium"
+          android:layout_marginLeft="@dimen/spacing_medium"
+          android:layout_marginRight="@dimen/spacing_medium">
+
+        <LinearLayout
+            style="@style/Widget.CardContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <com.linkx.babycare.view.components.SegmentHeaderView
+              android:id="@+id/dabian_header"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_marginBottom="@dimen/spacing_medium"
+              android:background="@color/lime"
+              />
+          <LinearLayout
+              android:orientation="vertical"
+              android:id="@+id/dabian_data"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+          </LinearLayout>
+        </LinearLayout>
+      </android.support.v7.widget.CardView>
+
+      <com.linkx.babycare.view.components.SimpleEditSegmentView
+          android:id="@+id/xiaobian_view"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+      </com.linkx.babycare.view.components.SimpleEditSegmentView>
+
+      <com.linkx.babycare.view.components.SimpleEditSegmentView
+          android:id="@+id/huangdan_view"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+      </com.linkx.babycare.view.components.SimpleEditSegmentView>
+
+       <com.linkx.babycare.view.components.SimpleEditSegmentView
+          android:id="@+id/tiwen_view"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+      </com.linkx.babycare.view.components.SimpleEditSegmentView>
+
+      <com.linkx.babycare.view.components.SimpleEditSegmentView
+          android:id="@+id/tizhong_view"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+      </com.linkx.babycare.view.components.SimpleEditSegmentView>
+
+    </LinearLayout>
+  </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
+

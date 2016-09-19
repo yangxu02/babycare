@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    >
+
+  <TextView
+      style="@style/ColText.tag"
+      android:id="@+id/breast_which"
+      />
+  <TextView
+      style="@style/ColText.time"
+      android:id="@+id/buru_start_time"
+      android:layout_toEndOf="@+id/breast_which"
+      />
+  <TextView
+      style="@style/ColText.time"
+      android:id="@+id/buru_end_time"
+      android:layout_toEndOf="@+id/buru_start_time"
+      />
+  <TextView
+      style="@style/ColText.timer"
+      android:id="@+id/buru_timer"
+      android:layout_toEndOf="@+id/buru_end_time"
+      />
+  <ImageView
+      style="@style/ColText.iconMedium.last"
+      android:id="@+id/buru_controll"
+      android:src="@drawable/ic_action_playback_play"
+      android:layout_alignParentEnd="true"
+      />
+
+</RelativeLayout>

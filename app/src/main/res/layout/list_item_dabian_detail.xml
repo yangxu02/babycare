@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    >
+   <TextView
+      style="@style/ColText.time.first"
+      android:id="@+id/dabian_time"
+      />
+
+   <View
+       style="@style/ColText.colorBlock"
+        android:id="@+id/dabian_color"
+        android:background="@color/yellow"
+       android:layout_toEndOf="@+id/dabian_time"
+        />
+
+  <TextView
+      style="@style/ColText.value"
+      android:id="@+id/softy"
+      android:layout_toEndOf="@+id/dabian_color"
+      />
+
+  <TextView
+      style="@style/ColText.value"
+      android:id="@+id/quantity"
+      android:layout_toEndOf="@+id/softy"
+      />
+
+  <ImageView
+      style="@style/ColText.iconSmall"
+      android:id="@+id/dabian_rating"
+      android:src="@drawable/ic_action_emo_basic"
+      android:layout_toEndOf="@+id/quantity"
+      />
+
+  <ImageView
+      style="@style/ColText.iconSmall.last"
+      android:id="@+id/dabian_delete"
+      android:src="@drawable/ic_action_trash"
+      android:layout_alignParentEnd="true"
+      />
+
+</RelativeLayout>
